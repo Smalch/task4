@@ -15,28 +15,49 @@ namespace Task4
 
         interface Editor
         {
+            /// <summary>
+            /// Включает проверку на соответствие бегинов и ендов
+            /// </summary>
             void Correct_Begin_End();
             static void Ex()
             {
                 throw new Exception("Неправильные входные параметры");
             }
-
+            /// <summary>
+            /// Задает цвет подсветки спец команд
+            /// </summary>
             void Color();
-
+            /// <summary>
+            /// проверка правильности написания команды select
+            /// </summary>
             void Check_s();
-
+            /// <summary>
+            /// проверка на коректность расставления ;
+            /// </summary>
             void Check_toch();
-
+            /// <summary>
+            /// Включение/выключени автотабуляции
+            /// </summary>
             void Esckape();
-
+            /// <summary>
+            /// Активация точек останова
+            /// </summary>
             void Toch_ost();
-
+            /// <summary>
+            /// Включение автоисправления
+            /// </summary>
             void Auto_kor();
-
+            /// <summary>
+            /// Автодописывания без нажатия tab
+            /// </summary>
             void Auo_dop();
-
+            /// <summary>
+            /// Включает автосохранения 
+            /// </summary>
             void Auto_save();
-
+            /// <summary>
+            /// Включает подсветку ошибок
+            /// </summary>
             void Pod_mis();
         }
 
